@@ -1,0 +1,14 @@
+/* pages/pay/success.wxss */
+page{
+	background-color: #fff;
+}
+.g-main{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.u-img{
+	margin-top: 120rpx;
+	width: 185rpx;
+	height: 169rpx;
+}

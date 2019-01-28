@@ -1,0 +1,56 @@
+/* pages/pay/pay.wxss */
+
+page {
+  padding: 20rpx 15rpx;
+  color: #545454;
+}
+
+radio {
+  transform: scale(0.8);
+}
+
+.g-hd {
+  padding: 10rpx 20rpx;
+  background-color: #fff;
+}
+
+.cDefault {
+  color: #52b5ff;
+}
+
+.m-payArray {
+  background-color: #fff;
+  padding: 30rpx 20rpx;
+}
+
+.m-payArray>label {
+  margin-top: 50rpx;
+  width: 100%;
+  height: 140rpx;
+  border-radius: 10rpx;
+  border: 2rpx solid #52b5ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40rpx 0 17rpx;
+}
+
+.m-payArray>view:first-child {
+  margin-top: 0;
+}
+
+.u-nor,.u-sel{
+  font-size: 32rpx;
+  color: #999;
+}
+
+.u-sel{
+	background-color: #52b5ff;
+	color: #fff;
+}
+.u-nor text{
+	color:#545454 ;
+}
+.u-sel text{
+	color: #fff;
+}

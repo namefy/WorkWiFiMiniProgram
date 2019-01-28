@@ -1,0 +1,145 @@
+/**index.wxss**/
+
+.g-head {
+  width: 100%;
+  height: 820rpx;
+  background: linear-gradient(180deg, #5edefa 0%, #30baf3 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.m-tt {
+  margin-top: 58rpx;
+  font-size: 37rpx;
+  color: #fff;
+}
+
+.m-wifi {
+  margin-top: 134rpx;
+  width: 420rpx;
+  height: 322rpx;
+}
+
+.m-btn {
+  display: flex;
+  margin-top: 54rpx;
+  width: 480rpx;
+  justify-content: space-between;
+}
+
+.btn {
+  width: 220rpx;
+  height: 66rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 34rpx;
+  border-radius: 33rpx;
+}
+
+.btn-con {
+  background-color: #b0e6fa;
+  color: #fff;
+}
+
+.btn-get {
+  background-color: #fff;
+  color: #52b5ff;
+}
+
+.m-tip {
+  margin-top: 46rpx;
+  font-size: 30rpx;
+  color: #fff;
+}
+
+.g-main {
+  padding: 30rpx 15rpx 45rpx 15rpx;
+}
+
+.m-func-ban {
+  height: 150rpx;
+  box-shadow: 0 2rpx 4rpx 0 #e3e4e5;
+}
+
+.m-func-ban image {
+  width: 720rpx;
+  height: 150rpx;
+}
+
+.m-func-get {
+  height: 160rpx;
+  box-shadow: 0 2rpx 4rpx 0 #c1c1c1;
+  border-radius: 10rpx;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 0 16rpx;
+}
+
+.m-func-get image {
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.m-conWifi {
+  width: 240rpx;
+  height: 184rpx;
+  margin-top: 176rpx;
+}
+
+.m-switch {
+  margin-top: 30rpx;
+  display: flex;
+  padding-left: 106rpx;
+  font-size: 50rpx;
+  color: #fff;
+}
+
+.btn-switch {
+  margin-left: 16rpx;
+  width: 90rpx;
+  height: 38rpx;
+  background-color: #fff;
+  color: #52b5ff;
+  font-size: 30rpx;
+  border-radius: 41rpx 6rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.m-already {
+  margin-top: 40rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+  color: #fff;
+}
+
+.u-diliver {
+  width: 210rpx;
+  height: 6rpx;
+  background-color: #fff;
+  border-radius: 4rpx;
+}
+
+.m-tool {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 42rpx;
+  width: 664rpx;
+}
+
+.c-between {
+  justify-content: space-between;
+}
+
+.btn-pay{
+	width: 150rpx;
+	height: 50rpx;
+	font-size: 26rpx;
+}

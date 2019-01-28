@@ -1,0 +1,41 @@
+{
+	"pages": [
+		"pages/index/index",
+		"pages/pay/pay",
+		"pages/pay/success",
+		"pages/auth/auth",
+		"pages/login/login",
+		"pages/login/service"
+	],
+	"window": {
+		"backgroundTextStyle": "dark",
+		"navigationBarBackgroundColor": "#30BAF3",
+		"navigationBarTitleText": "工地WiFi",
+		"navigationBarTextStyle": "white"
+	},
+	"tabBar": {
+		"color": "#7F8389",
+		"selectedColor": "#30BAF3",
+		"backgroundColor": "#fff",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "网络",
+				"iconPath": "icons/tab/tab_wifi_nor.png",
+				"selectedIconPath": "icons/tab/tab_wifi_pre.png"
+			},
+			{
+				"pagePath": "pages/index/index",
+				"text": "广场",
+				"iconPath": "icons/tab/tab_square_nor.png",
+				"selectedIconPath": "icons/tab/tab_square_pre.png"
+			},
+			{
+				"pagePath": "pages/index/index",
+				"text": "我的",
+				"iconPath": "icons/tab/tab_mine_nor.png",
+				"selectedIconPath": "icons/tab/tab_mine_pre.png"
+			}
+		]
+	}
+}

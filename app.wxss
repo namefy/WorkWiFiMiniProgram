@@ -1,0 +1,91 @@
+/**app.wxss**/
+
+page {
+  background-color: #f5f5f9;
+}
+
+page, view, scorll-view, navigator, label, input {
+  box-sizing: border-box;
+}
+
+input {
+  border-radius: 6rpx;
+  border: 1rpx solid #979797;
+  font-size: 30rpx;
+  padding-left: 23rpx;
+  color: #545454;
+  height: 60rpx;
+}
+
+.btn {
+  width: 530rpx;
+  height: 80rpx;
+  background-color: #52b5ff;
+  border-radius: 10rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 40rpx;
+}
+
+.btn-dis {
+  background-color: #b7b7b7;
+  pointer-events: none;
+}
+
+.cff {
+  color: #fff;
+}
+
+.cf8 {
+  color: #f8f8f8;
+}
+
+.c54 {
+  color: #545454;
+}
+
+.c99 {
+  color: #999;
+}
+
+.fs30 {
+  font-size: 30rpx;
+}
+
+.fs36 {
+  font-size: 36rpx;
+}
+
+.fs40 {
+  font-size: 40rpx;
+}
+
+.fs50 {
+  font-size: 50rpx;
+}
+
+.mar-t20 {
+  margin-top: 20rpx;
+}
+
+.mar-t30 {
+  margin-top: 30rpx;
+}
+
+.mar-t40 {
+  margin-top: 40rpx;
+}
+
+.mar-t70 {
+  margin-top: 70rpx;
+}
+
+.mar-t100 {
+  margin-top: 100rpx;
+}
+
+.mar-l30 {
+  margin-left: 30rpx;
+}

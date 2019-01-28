@@ -1,0 +1,5 @@
+/* pages/auth/auth.wxss */
+.g-hd{
+	height: 270rpx;
+	background-color: #52B5FF;
+}

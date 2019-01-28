@@ -1,0 +1,3 @@
+<!--pages/auth/auth.wxml-->
+<view class='g-hd'></view>
+<button class='btn' open-type='getUserInfo' bindgetuserinfo='getUserInfo' style='margin-top:340rpx;'>微信授权</button>

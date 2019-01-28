@@ -1,0 +1,26 @@
+<!--pages/pay/pay.wxml-->
+<view class='g-hd'>
+  <view class='fs30'>当前剩余天数通用于所有“超级工地WiFi”</view>
+  <view class='fs40 cDefault'>2天</view>
+</view>
+<form bindsubmit='pay'>
+  <view class='mar-t20'>
+    <view>付费套餐</view>
+    <radio-group bindchange="radioChange" name='pay'>
+      <view class='mar-t20 m-payArray'>
+        <block wx:for="{{payArray}}" wx:key="id">
+          <label class='u-nor {{item.checked?"u-sel":""}}' bindtap='tapRadio'>
+            <view>
+              <view>{{item.info1}} -
+                <text class='fs40'>{{item.info2}}</text>
+              </view>
+              <view class='fs30' style='margin-top:11rpx;'>{{item.info3}}</view>
+            </view>
+            <radio value='{{index}}' checked='{{item.checked}}'></radio>
+          </label>
+        </block>
+      </view>
+    </radio-group>
+    <button class='btn {{canPay?"":"btn-dis"}}' form-type='submit' style='margin-top:62rpx;'>微信支付{{canPay?payArray[payIndex].money+"元":""}}</button>
+  </view>
+</form>

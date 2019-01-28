@@ -1,0 +1,8 @@
+<!--pages/pay/success.wxml-->
+<view class='g-main'>
+  <image class='u-img' mode='aspectFit' src='../../icons/tips/payment success_ico.png'></image>
+  <view class='fs50 c54 mar-t40'>支付成功</view>
+  <view class='fs36 c54  mar-t40'>已购买7天通用上网天数</view>
+  <view class='fs36 c54'>适用于所有名称为“超级工地WiFi”的网络</view>
+	<navigator open-type='switchTab'  class='btn mar-t70' url='../index/index'>返回首页</navigator>
+</view>

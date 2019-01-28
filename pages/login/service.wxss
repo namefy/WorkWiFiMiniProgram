@@ -1,0 +1,9 @@
+/* pages/login/service.wxss */
+text{
+	font-size: 26rpx;
+	color: #545454;
+	font-weight: 400;
+}
+page{
+		padding: 20rpx 10rpx 30rpx 10rpx;
+}

@@ -1,0 +1,64 @@
+<!--index.wxml-->
+<view class='g-head'>
+  <view class='m-tt'>{{navTitle}}</view>
+  <!-- 未连WiFi 无时长  -->
+  <block wx:if="{{!connectWiFi && !havaTime}}">
+    <image class='m-wifi' mode='aspectFix' src='../../icons/network/wifi_fullsignal.png'></image>
+    <view class='m-btn'>
+      <view class='btn btn-con' bindtap='connectWiFi'>连接网络</view>
+      <navigator url='../pay/pay' class='btn btn-get'>获取时长</navigator>
+    </view>
+    <view class='m-tip'>购买或兑换的可用时长，通用于所有“工地WiFi”</view>
+  </block>
+  <!-- 未连WiFi 有时长  -->
+  <block wx:elif="{{!connectWiFi &&havaTime}}">
+    <image class='m-conWifi' mode='aspectFix' src='../../icons/network/wifi_noconnect.png'></image>
+    <view>
+      <view class='btn btn-con mar-t30' bindtap='connectWiFi'>连接网络</view>
+    </view>
+    <view class='m-already'>
+      <view class='u-diliver'></view>
+      <view style='margin:0 16rpx;'>{{tip[tipindex]}}</view>
+      <view class='u-diliver'></view>
+    </view>
+    <view class='m-tool c-between'>
+      <view class='fs30 cff'>剩余天数
+        <span class='fs40 cff mar-l30'>11天</span>
+      </view>
+      <navigator url='../pay/pay' class='btn btn-get'>获取时长</navigator>
+    </view>
+  </block>
+  <!-- 已连wifi  -->
+  <block wx:elif="{{connectWiFi}}">
+    <image class='m-conWifi' mode='aspectFix' src='{{curWiFi.signal}}'></image>
+    <view class='m-switch'>
+      <view>{{curWiFi.SSID}}</view>
+      <view class='btn-switch' bindtap='connectWiFi'>切换</view>
+    </view>
+    <view class='m-already'>
+      <view class='u-diliver'></view>
+      <view style='margin:0 16rpx;'>{{tip[tipindex]}}</view>
+      <view class='u-diliver'></view>
+    </view>
+    <view class='m-tool {{havaTime?"c-between":""}}'>
+      <view wx:if="{{havaTime}}" class='fs30 cff'>剩余天数
+        <span class='fs40 cff mar-l30'>11天</span>
+      </view>
+      <navigator url='../pay/pay' class='btn btn-get'>获取时长</navigator>
+    </view>
+  </block>
+</view>
+<view class='g-main'>
+  <navigator class='m-func-ban'>
+    <image mode='aspectFit' src='../../icons/banner/banner.png'></image>
+  </navigator>
+  <navigator url='../pay/pay' class='mar-t30 m-func-get'>
+    <image mode='aspectFit' src='../../icons/network/wifi.png'></image>
+    <view class='mar-l30' style='flex:1;'>
+      <view class='fs40 c54'>购买上网时长</view>
+      <view class='fs30 c99'>上网天数套餐</view>
+    </view>
+    <view class='btn btn-pay'>点击购买</view>
+  </navigator>
+</view>
+<button bindtap='test'>test</button>

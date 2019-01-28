@@ -1,0 +1,59 @@
+/* pages/login/login.wxss */
+
+radio {
+  transform: scale(0.7);
+}
+
+.g-hd {
+  height: 270rpx;
+  background-color: #52b5ff;
+}
+
+.g-main {
+  margin: 20rpx 15rpx 0 15rpx;
+}
+
+.m-login {
+  background-color: #fff;
+  width: 100%;
+  box-shadow: 0 2rpx 4rpx 0 #e3e4e5;
+  border-radius: 10rpx;
+  padding: 15rpx 20rpx 20rpx 25rpx;
+}
+
+.m-input {
+  display: flex;
+  align-items: center;
+  height: 120rpx;
+}
+
+.m-input image {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.m-input>text {
+  margin-left: 15rpx;
+  margin-right: 20rpx;
+  font-size: 36rpx;
+  color: #545454;
+  width: 144rpx;
+  height: 50rpx;
+}
+
+.btn-send {
+  margin-left: 10rpx;
+  width: 160rpx;
+  height: 60rpx;
+  font-size: 26rpx;
+}
+
+.m-service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.m-service navigator {
+  color: #52b5ff;
+}

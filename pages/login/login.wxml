@@ -1,0 +1,47 @@
+<!--pages/login/login.wxml-->
+<view class='g-hd'></view>
+<form bindsubmit='submit'>
+  <view class='g-main'>
+    <view class='m-login'>
+      <block wx:if="{{!register}}">
+        <view class='m-input'>
+          <image mode='aspectFit' src='../../icons/login/gender_ico.png'></image>
+          <text decode='true'>性&nbsp;&nbsp;&nbsp;别：</text>
+          <view>
+            <radio-group name='sex'>
+              <label class='fs30'>
+                <radio value='male' color='#52B5FF'></radio>男</label>
+              <label class='fs30' style='margin-left:60rpx;'>
+                <radio value='female' color='#52B5FF'></radio>女</label>
+            </radio-group>
+          </view>
+        </view>
+        <view class='m-input'>
+          <image mode='aspectFit' src='../../icons/login/name_ico.png'></image>
+          <text decode='true'>姓&nbsp;&nbsp;&nbsp;名：</text>
+          <view>
+            <input name='name' type='text' placeholder='请输入真实姓名' style='width:460rpx;'></input>
+          </view>
+        </view>
+      </block>
+      <view class='m-input'>
+        <image mode='aspectFit' src='../../icons/login/phone_ico.png'></image>
+        <text>手机号：</text>
+        <view>
+          <input name='phone' type='number' placeholder='输入手机号' style='width:460rpx;' bindinput='phoneInput' value='1860514746'></input>
+        </view>
+      </view>
+      <view class='m-input'>
+        <image mode='aspectFit' src='../../icons/login/code_ico.png'></image>
+        <text>验证码：</text>
+        <view>
+          <input name='code' type='number' placeholder='输入验证码' style='width:290rpx;'></input>
+        </view>
+        <view class='btn btn-send {{canSend?"":"btn-dis"}}' bindtap='sendCode'>{{sendText}}</view>
+      </view>
+    </view>
+    <button form-type='submit' class='btn mar-t100'>登 录</button>
+    <view class='mar-t30 fs30 c99 m-service'>点击登录即表示同意“
+      <navigator url='service'>服务条款</navigator>”</view>
+  </view>
+</form>
